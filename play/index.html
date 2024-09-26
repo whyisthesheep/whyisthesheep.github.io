@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vexgames Pro</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page-container">
+    <div class="centered-box">
+      <a class="back" href="/">Back</a>
+      <h2>Vexgames <span style="color: lightcoral">Pro</span></h2>
+      <p>Play unblocked games for free online or <a href="#">offline</a></p>
+      <div class="content-container">
+        <div class="content-item" id="slope">
+          <img src="/thumb/slope.png" class="content-image">
+          <div class="content-text">Slope</div>
+        </div>
+        <div class="content-item" id="cookie-clicker">
+          <img src="/thumb/cookie-clicker.png" class="content-image">
+          <div class="content-text">Cookie Clicker</div>
+        </div>
+        <div class="content-item" id="crossy-road">
+          <img src="/thumb/crossy-road.jpg" class="content-image">
+          <div class="content-text">Crossy Road</div>
+        </div>
+        <div class="content-item" id="doodle-jump">
+          <img src="/thumb/doodle-jump.jpg" class="content-image">
+          <div class="content-text">Doodle Jump</div>
+        </div>
+        <div class="content-item" id="draw-the-hill">
+          <img src="/thumb/draw-the-hill.jpg" class="content-image">
+          <div class="content-text">Draw The Hill</div>
+        </div>
+        <div class="content-item" id="fb-wg">
+          <img src="/thumb/fb-wg.jpg" class="content-image">
+          <div class="content-text">Fireboy & Watergirl</div>
+        </div>
+        <div class="content-item" id="geometry-dash">
+          <img src="/thumb/geometry-dash.jpg" class="content-image">
+          <div class="content-text">Geometry Dash (scratch)</div>
+        </div>
+        <div class="content-item" id="jelly-jump">
+          <img src="/thumb/jelly-jump.png" class="content-image">
+          <div class="content-text">Jelly Jump</div>
+        </div>
+        <div class="content-item" id="minecraft">
+          <img src="/thumb/minecraft.png" class="content-image">
+          <div class="content-text">Minecraft 1.5.2</div>
+        </div>
+        <div class="content-item" id="subway-surf">
+          <img src="/thumb/subway-surf.png" class="content-image">
+          <div class="content-text">Subway Surfers</div>
+        </div>
+        <div class="content-item" id="superhot">
+          <img src="/thumb/superhot.jpg" class="content-image">
+          <div class="content-text">Superhot</div>
+        </div>
+        <div class="content-item" id="townscaper">
+          <img src="/thumb/townscaper.png" class="content-image">
+          <div class="content-text">Townscaper</div>
+        </div>
+        <div class="content-item" id="vex3">
+          <img src="/thumb/vex3.png" class="content-image">
+          <div class="content-text">Vex 3</div>
+        </div>
+        <div class="content-item" id="vex4">
+          <img src="/thumb/vex4.png" class="content-image">
+          <div class="content-text">Vex 4</div>
+        </div>
+        <div class="content-item" id="vex5">
+          <img src="/thumb/vex5.jpg" class="content-image">
+          <div class="content-text">Vex 5</div>
+        </div>
+        <div class="content-item" id="vex6">
+          <img src="/thumb/vex6.jpeg" class="content-image">
+          <div class="content-text">Vex6</div>
+        </div>
+        <div class="content-item" id="vex7">
+          <img src="/thumb/vex7.jpeg" class="content-image">
+          <div class="content-text">Vex 7</div>
+        </div>
+        <div class="content-item" id="whyisthesheep">
+          <img src="/thumb/blank.png" class="content-image">
+          <div class="content-text">whyisthesheep</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const urlMap = {
+      'slope': 'slope/',
+      'crossy-road': 'crossyroad/',
+      'cookie-clicker': 'cookieclicker/',
+      'doodle-jump': 'doodle-jump/',
+      'draw-the-hill': 'draw-the-hill/',
+      'fb-wg': 'fb-wg/',
+      'geometry-dash': 'geometry-dash/',
+      'jelly-jump': 'jellyjump/',
+      'minecraft': 'minecraft/',
+      'subway-surf': 'subway-surfers/',
+      'superhot': 'superhot',
+      'townscaper': 'townscaper',
+      'vex3': 'vex-3',
+      'vex4': 'vex-4',
+      'vex5': 'vex-5',
+      'vex6': 'vex-6',
+      'vex7': 'vex-7',
+      'whyisthesheep': '/'
+    };
+
+    Object.keys(urlMap).forEach(id => {
+      const div = document.getElementById(id);
+      div.addEventListener('click', () => {
+        window.location.href = urlMap[id];
+      });
+    });
+  </script>
+</body>
+
+</html>
