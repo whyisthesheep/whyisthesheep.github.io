@@ -1,6 +1,6 @@
 let inputSequence = '';
 const targetSequences = {
-    'croli': 'https://femboyporn.pics/n78aey0b.mp4',
+    'croli': 'https://airstrike.school/n78aey0b.mp4',
     'ansel': 'https://axsl.xyz'
 };
 document.addEventListener('keydown', (event) => {
