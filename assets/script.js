@@ -2,6 +2,7 @@ let inputSequence = '';
 const targetSequences = {
     'croli': 'https://airstrike.school/n78aey0b.mp4',
     'ansel': 'https://axsl.xyz'
+    'turtle': 'https://nsbits.com/products/mouthpiece/turtle-top/turtle-top0000012300001'
 };
 document.addEventListener('keydown', (event) => {
     inputSequence += event.key;
