@@ -33,7 +33,7 @@
     <div class="centered-box">
       <h2>Vexgames <span style="color: lightcoral">Pro</span></h2>
       <p>The rebirth of vexgames</p>
-      <p><a href="/play/">Play</a> - <a href="#">Offline</a> - <a href="#">Settings</a></p>
+      <p><a href="/play/">Play</a> - <a href="#">Offline</a> - <a href="#">Settings</a> - Bookmarklet: <a href="javascript:(function(){var iframe=document.createElement('iframe');iframe.style.position='fixed';iframe.style.top='0';iframe.style.left='0';iframe.style.width='100%';iframe.style.height='100%';iframe.style.border='none';iframe.style.zIndex='9999';iframe.src='https://whyisthesheep.xyz';iframe.style.display='none';document.body.appendChild(iframe);function toggleIframe(){if(iframe.style.display==='none'){iframe.style.display='block';document.body.style.overflow='hidden';}else{iframe.style.display='none';document.body.style.overflow='';}}document.addEventListener('keydown',function(e){if(e.key==='/'){toggleIframe();}});window.addEventListener('message',function(event){if(event.data.type==='keyPress'&&event.data.key==='/'){console.log('Child website pressed the / key!');toggleIframe();}});})();" draggable="true" ondragstart="event.dataTransfer.setData('text/plain', this.href);">Full</a></p>
     </div>
   </div>
   <script src="/assets/script.js"></script>
