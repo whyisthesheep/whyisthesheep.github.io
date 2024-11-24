@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time to drop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta property="og:title" content="Time to drop">
+    <meta property="og:url" content="https://whyisthesheep.xyz/ttd">
+    <meta property="og:type" content="website">
+</head>
+<body class="bg-neutral-800 p-6 text-white space-y-4">
+    <div class="text-2xl font-bold">Time to drop</div>
+    <div>
+        <ul class="space-y-2">
+            <li class="flex items-center space-x-3"><img src="https://i.scdn.co/image/ab67616d00001e024876290066702736fb7a2d9b" alt="Osamson" class="h-12 w-12 rounded-full"><a href="https://www.youtube.com/watch?v=Fy7WIdkxwDw">Osamason</a><span>-</span><div id="2">29 November</div></li>
+            <li class="flex items-center space-x-3"><img src="https://i.scdn.co/image/ab67616d00001e02305b8eab0c80b400fc06c3b9" alt="Nettspend" class="h-12 w-12 rounded-full"><a href="https://www.youtube.com/watch?v=ba_Nic6VjtE">Nettspend</a><span>-</span><div id="3">6 December</div></li>
+            <li class="flex items-center space-x-3"><img src="https://i.scdn.co/image/ab67616100005174ba50ca67ffc3097f6ea1710a" alt="Carti" class="h-12 w-12 rounded-full"><a href="https://pillowcase.su/f/5c168c7f9705e4431d45976da1d8c338">Playboi Carti</a><span>-</span><div id="1">Anytime</div></li>
+        </ul>
+    </div>
+    <script>
+        const targetDates = {
+            "1": new Date("December 30, 2124 00:00:00 GMT-0500"),
+            "2": new Date("November 29, 2024 00:00:00 GMT-0500"),
+            "3": new Date("December 6, 2024 00:00:00 GMT-0500")
+        };
+        function updateCountdown() {
+            const now = new Date();   
+            for (const id in targetDates) {
+                const timeDiff = targetDates[id] - now;
+                const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+                document.getElementById(id).innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+            }
+        }
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>       
+</body>
+</html>
